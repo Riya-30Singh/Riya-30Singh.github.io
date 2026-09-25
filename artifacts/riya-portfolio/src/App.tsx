@@ -185,7 +185,7 @@ function App() {
           {nav.map((item) => <a href={`#${item}`} key={item} data-testid={`link-nav-${item}`} onClick={() => setMobileOpen(false)}>{item}</a>)}
           <a className="nav-icon" href={GITHUB_URL} target="_blank" rel="noreferrer" data-testid="link-nav-github" aria-label="GitHub"><Github size={14} /></a>
           <a className="nav-icon" href={LINKEDIN_URL} target="_blank" rel="noreferrer" data-testid="link-nav-linkedin" aria-label="LinkedIn"><Linkedin size={14} /></a>
-          <a className="nav-resume" href={`${BASE}resume.pdf`} download="Riya-Singh-Resume.pdf" data-testid="link-nav-resume">Resume <ArrowUpRight size={13} /></a>
+          <a className="nav-resume" href={`${BASE}resume.pdf`} target="_blank" rel="noreferrer" data-testid="link-nav-resume">Resume <ArrowUpRight size={13} /></a>
         </nav>
       </header>
 
@@ -199,7 +199,7 @@ function App() {
             <p className="hero-intro">I enjoy solving problems, learning continuously and turning ideas into functional software that is clear, useful and thoughtfully built.</p>
             <div className="hero-actions">
               <a className="primary-button" href="#projects" data-testid="link-hero-projects">View my projects <ArrowUpRight size={14} /></a>
-              <a className="secondary-button" href={`${BASE}resume.pdf`} download="Riya-Singh-Resume.pdf" data-testid="link-hero-resume"><Download size={14} />Download resume</a>
+              <a className="secondary-button" href={`${BASE}resume.pdf`} target="_blank" rel="noreferrer" data-testid="link-hero-resume"><Download size={14} />Download resume</a>
             </div>
             <div className="social-row"><SocialLinks location="hero" /><a href={`mailto:${CONTACT_EMAIL}`} data-testid="link-hero-email"><Mail size={14} /> Email</a></div>
           </div>
@@ -286,7 +286,7 @@ function App() {
 
         <section className="resume-cta section-pad">
           <h2>Keep the conversation going.<br />Want to know more about my experience?</h2>
-          <div className="resume-actions"><a className="secondary-button" href={`${BASE}resume.pdf`} download="Riya-Singh-Resume.pdf" data-testid="link-resume-cta"><FileText size={14} />Resume <ArrowUpRight size={13} /></a><a className="primary-button" href={`mailto:${CONTACT_EMAIL}`} data-testid="link-contact-cta">Get in touch <ArrowUpRight size={14} /></a></div>
+          <div className="resume-actions"><a className="secondary-button" href={`${BASE}resume.pdf`} target="_blank" rel="noreferrer" data-testid="link-resume-cta"><FileText size={14} />Resume <ArrowUpRight size={13} /></a><a className="primary-button" href={`mailto:${CONTACT_EMAIL}`} data-testid="link-contact-cta">Get in touch <ArrowUpRight size={14} /></a></div>
         </section>
       </main>
 
