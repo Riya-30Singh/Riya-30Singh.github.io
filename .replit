@@ -1,4 +1,4 @@
-modules = ["nodejs-24"]
+modules = ["nodejs-24", "python-base-3.13"]
 
 [deployment]
 router = "application"
@@ -18,3 +18,7 @@ expertMode = true
 [postMerge]
 path = "scripts/post-merge.sh"
 timeoutMs = 20000
+
+[nix]
+channel = "stable-25_05"
+packages = ["gitFull", "playwright-driver", "nspr", "nss", "atk", "cups", "libxkbcommon", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXrandr", "xorg.libXfixes", "xorg.libX11", "xorg.libxcb", "pango", "cairo", "alsa-lib", "mesa", "libdrm"]

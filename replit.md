@@ -1,6 +1,6 @@
-# [Project name]
+# Riya Singh Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An editable single-page portfolio for Riya Singh, an MCA student and aspiring software developer.
 
 ## Run & Operate
 
@@ -22,15 +22,20 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/riya-portfolio/src/App.tsx` — portfolio content, sections, links, and interactions
+- `artifacts/riya-portfolio/src/index.css` — visual system, responsive layout, and motion
+- `artifacts/riya-portfolio/public/` — public static assets
+- `artifacts/riya-portfolio/.replit-artifact/artifact.toml` — artifact routing and workflow metadata
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The portfolio is a static client-side page; it does not require a database or API.
+- The original page copy and section order are kept in the React source so the user can edit them directly.
+- The design uses plain CSS with Manrope and DM Mono instead of the scaffolded utility styles.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+The portfolio presents Riya's introduction, skills, selected projects, education, experience, and contact paths. It includes responsive anchor navigation, a mobile menu, project expansion and case-study dialogs, and mailto-based contact actions.
 
 ## User preferences
 
@@ -38,7 +43,7 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Add the real resume file at `artifacts/riya-portfolio/public/resume.pdf` if resume download links should serve a document.
 
 ## Pointers
 
