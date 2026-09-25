@@ -94,6 +94,14 @@ const education = [
   { period: 'CBSE', title: 'Class X', school: 'Secondary education', detail: '79%' },
 ];
 
+const credentials = [
+  { label: 'Internship certificate', issuer: 'InAmigos Foundation', file: 'credentials/inamigos-internship-certificate.pdf' },
+  { label: 'Appreciation certificate', issuer: 'InAmigos Foundation', file: 'credentials/inamigos-appreciation-certificate.pdf' },
+  { label: 'Letter of recommendation', issuer: 'InAmigos Foundation', file: 'credentials/inamigos-letter-of-recommendation.pdf' },
+  { label: 'Offer letter', issuer: 'Azisly.ai Impact Sprint', file: 'credentials/azisly-offer-letter.pdf' },
+  { label: 'Completion certificate', issuer: 'Azisly.ai Impact Sprint', file: 'credentials/azisly-completion-certificate.pdf' },
+];
+
 function SectionHeading({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
   return (
     <div className="section-heading">
@@ -267,9 +275,16 @@ function App() {
                 <div className="experience-skills">
                   <span>HTML</span><span>CSS</span><span>Responsive design</span><span>UI improvement</span>
                 </div>
-                <a className="text-button credential-button" href="#contact" data-testid="link-internship-credential">
-                  <FileText size={13} />Request credential <ArrowUpRight size={12} />
-                </a>
+                <div className="credential-list">
+                  <div className="credential-heading"><span>Credentials</span><p>Certificates, recommendation and offer documents</p></div>
+                  <div className="credential-actions">
+                    {credentials.map((credential) => (
+                      <a className="credential-button" href={`${BASE}${credential.file}`} target="_blank" rel="noreferrer" key={credential.file} data-testid={`link-credential-${credential.label.toLowerCase().replaceAll(' ', '-')}`}>
+                        <FileText size={13} /><span><b>{credential.label}</b><small>{credential.issuer}</small></span><ExternalLink size={12} />
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </article>
               <div><span>02</span><p><b>Independent project work</b><br />Built responsive web and console applications while strengthening problem solving and implementation habits.</p></div>
               <div><span>03</span><p><b>Continuous learning</b><br />Exploring Java, databases, data structures and the practices that make software dependable.</p></div>
