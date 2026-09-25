@@ -100,6 +100,14 @@ ul { margin: 0; padding: 0; }
 .experience-card .section-heading { margin: 0; } .experience-card .section-heading h2 { font-size: clamp(2rem, 3.4vw, 3.2rem); }
 .exposure-list { border-top: 1px solid var(--line); } .exposure-list > div { display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
 .exposure-list span { font: 11px 'DM Mono', monospace; color: var(--cyan); } .exposure-list p { margin: 0; color: #bdc8d8; font-size: 13px; line-height: 1.6; } .exposure-list b { color: var(--text); font-weight: 500; }
+.internship-entry { display: block !important; padding: 24px 0 22px !important; }
+.experience-entry-heading { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 18px; }
+.experience-entry-heading h3 { font-size: 18px; margin: 0 0 7px; letter-spacing: -.02em; }
+.experience-meta { color: var(--cyan) !important; font: 10px 'DM Mono', monospace !important; margin: 0 !important; text-transform: uppercase; letter-spacing: .04em; }
+.internship-entry > p { margin: 0 0 17px; }
+.experience-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.experience-skills span { color: #aab8ce; border: 1px solid #303a4d; padding: 6px 7px; font: 10px 'DM Mono', monospace; }
+.credential-button { color: var(--cyan); }
 .editable-note { display: flex; gap: 8px; color: #697891; font: 11px 'DM Mono', monospace; margin-top: 24px; } .editable-note svg { color: var(--cyan); }
 .github-banner { margin-top: 40px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; gap: 30px; background: linear-gradient(110deg, #15243f, #102238 48%, #111821); border: 1px solid #2e4c76; padding-top: 45px; padding-bottom: 45px; }
 .github-banner h2, .resume-cta h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); margin: 13px 0 8px; } .github-banner p { color: #a5b5ca; margin: 0; font-size: 13px; } .github-banner .primary-button { white-space: nowrap; }

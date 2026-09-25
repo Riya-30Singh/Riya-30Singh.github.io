@@ -253,9 +253,24 @@ function App() {
         <section className="content-section section-pad" id="experience">
           <span className="section-index">05</span>
           <div className="experience-card">
-            <SectionHeading eyebrow="Experience & practical exposure" title="Learning by making." description="As a fresher, my practical exposure comes through coursework, independent builds and project-led learning." />
+            <SectionHeading eyebrow="Internship / Experience" title="Learning by making." description="Practical exposure through live project training, web development and project-led learning." />
             <div className="exposure-list">
-              <div><span>01</span><p><b>AI — 15 Days Live Project Training</b><br />Worked through a focused live project experience and learned to turn requirements into working features.</p></div>
+              <article className="internship-entry">
+                <div className="experience-entry-heading">
+                  <span>01</span>
+                  <div>
+                    <h3>InAmigos Foundation × Azisly.ai</h3>
+                    <p className="experience-meta">Intern · 15 days live project training</p>
+                  </div>
+                </div>
+                <p><b>Work</b><br />Contributed to web development and an NGO awareness website, with a focus on clear content, useful page structure and a responsive experience.</p>
+                <div className="experience-skills">
+                  <span>HTML</span><span>CSS</span><span>Responsive design</span><span>UI improvement</span>
+                </div>
+                <a className="text-button credential-button" href="#contact" data-testid="link-internship-credential">
+                  <FileText size={13} />Request credential <ArrowUpRight size={12} />
+                </a>
+              </article>
               <div><span>02</span><p><b>Independent project work</b><br />Built responsive web and console applications while strengthening problem solving and implementation habits.</p></div>
               <div><span>03</span><p><b>Continuous learning</b><br />Exploring Java, databases, data structures and the practices that make software dependable.</p></div>
               <div className="editable-note"><FileText size={13} />This section is ready to grow with the next opportunity.</div>
